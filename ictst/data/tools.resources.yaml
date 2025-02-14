@@ -1,9 +1,9 @@
-name: tools
+name: toolsa
 type: table
 path: tools.csv
 scheme: file
 format: csv
-mediatype : text/csv
+mediatype: text/csv
 encoding: utf-8
 schema:
   fields:
@@ -46,17 +46,27 @@ schema:
         - Software - Web Content
         - To Be Qualified
     - name: other_perimeters
+      type: string
     - name: assessed_functional_unit
+      type: string
     - name: data_entry_points
+      type: string
     - name: life_cycle_steps
+      type: string
     - name: ghg_scope
+      type: string
     - name: focus
+      type: string
     - name: licence
       type: string
     - name: self_hostable
+      type: string
     - name: originating_country
+      type: string
     - name: logo
+      type: string
     - name: inside_models
+      type: string
     - name: methodology_transparency
       type: string
       constraints:
@@ -68,15 +78,34 @@ schema:
         - Fully Disclosed
         - Not Applicable
     - name: ref_sources
+      type: string
     - name: status
+      type: string
+      constraints:
+        enum:
+        - Submitted
+        - Draft
+        - Boavizta reviewed
+        - Published
+        - Not to be listed
     - name: Creator
+      type: string
     - name: Creation date
+      type: string
     - name: Creator_comment
+      type: string
     - name: reviewer_1
+      type: string
     - name: review_1_date
+      type: string
     - name: review_1_explanation
+      type: string
     - name: reviewer_2
+      type: string
     - name: review_2_date
+      type: string
     - name: review_2_explanation
+      type: string
     - name: Linked Publications
-# Todo detail constraints on the fields.
+      type: string
+      
