@@ -83,7 +83,6 @@ schema:
       type: string
       constraints:
         enum:
-        - Submitted
         - Draft
         - Boavizta reviewed
         - Published
