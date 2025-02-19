@@ -1,4 +1,5 @@
 {
+	"$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
 	"fields": [
 		{
 			"name": "tool_name",
@@ -132,15 +133,15 @@
 						"Infra - Datacenter",
 						"Infra - Cloud",
 						"Infra - Network",
-						"Equipment - End-user Devices", 
-						"Equipment - IoT", 
-						"Equipment - Industrial equipment", 
-						"Software - Development Tools", 
+						"Equipment - End-user Devices",
+						"Equipment - IoT",
+						"Equipment - Industrial equipment",
+						"Software - Development Tools",
 						"Software - CI-CD",
-						"Software - Backend", 
-						"Software - API", 
-						"Software - Mobile Apps", 
-						"Software - Web Apps", 
+						"Software - Backend",
+						"Software - API",
+						"Software - Mobile Apps",
+						"Software - Web Apps",
 						"Software - Web Content",
 						"Not Applicable"
 					]
@@ -164,15 +165,15 @@
 						"Infra - Datacenter",
 						"Infra - Cloud",
 						"Infra - Network",
-						"Equipment - End-user Devices", 
-						"Equipment - IoT", 
-						"Equipment - Industrial equipment", 
-						"Software - Development Tools", 
+						"Equipment - End-user Devices",
+						"Equipment - IoT",
+						"Equipment - Industrial equipment",
+						"Software - Development Tools",
 						"Software - CI-CD",
-						"Software - Backend", 
-						"Software - API", 
-						"Software - Mobile Apps", 
-						"Software - Web Apps", 
+						"Software - Backend",
+						"Software - API",
+						"Software - Mobile Apps",
+						"Software - Web Apps",
 						"Software - Web Content",
 						"Not Applicable"
 					]
@@ -417,7 +418,6 @@
 				},
 				{
 					"enum": [
-						"Submitted",
 						"Draft",
 						"Boavizta reviewed",
 						"Published",
