@@ -5,7 +5,7 @@
     - [Example with just 2 fields](#example-with-just-2-fields)
     - [Restricting allowed values](#restricting-allowed-values)
   - [2.Configure the display and edition of fields](#2configure-the-display-and-edition-of-fields)
-    - [Basic Example](#basic-example)
+    - [Basic Example to configure the table view](#basic-example-to-configure-the-table-view)
     - [How to display a URL](#how-to-display-a-url)
     - [How to configure lists with multi valued vs mono valued inputs](#how-to-configure-lists-with-multi-valued-vs-mono-valued-inputs)
   - [3.Configure the cards view](#3configure-the-cards-view)
@@ -69,7 +69,7 @@ _⚠ Optional fields may not be used by the widget but may be used as documentat
 
 ### Restricting allowed values
 
-Use the constraint field. 
+Use the `constraints` field.
 
 It does **not** distinguish between mono or multiple values. This is done later at step 2 when configuring the widget.
 
@@ -108,13 +108,14 @@ It does **not** distinguish between mono or multiple values. This is done later 
 
 ## 2.Configure the display and edition of fields
 
-We need to configure how the widget displays and let the user edit the fields in a separate file.
+We need to configure how the widget displays fields, and let the user edit the fields in a separate file.
 
-Edit ictst/widget/tools.fields-custom-properties.json
+Edit `ictst/widget/tools.fields-custom-properties.json`
 
->[!NOTE] The configuration of cards view (how content is displayed as cards insted of table is done separately.
+>[!NOTE] The configuration of the *cards* view (how content is displayed as cards instead of table is done separately).
 
-### Basic Example
+### Basic Example to configure the table view
+
 
 ```json
 {
@@ -133,7 +134,6 @@ Edit ictst/widget/tools.fields-custom-properties.json
     
 ```
 
-
 ### How to display a URL
 
 Use `link` as the subtype.
@@ -147,10 +147,9 @@ Use `link` as the subtype.
 }
 ```
 
-
 ### How to configure lists with multi valued vs mono valued inputs
 
-Use the `tag`vs `tags`(plural) to let the widget know if the field accepts multiple values.
+Use the `tag` versus `tags`(plural) to let the widget know if the field accepts multiple values. The model `tools.frictionless-table-schema.json` can only be used to describe *allowed* values bt is not use to describe expected cardinality.
 
 ## 3.Configure the cards view
 
