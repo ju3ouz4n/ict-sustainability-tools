@@ -16,7 +16,7 @@ The legal entity having the intellectual property of the tool. In case of share 
 
 ## Website ([website] [R]) **✅**
 
-The tool must have a dedicated web page (landing page, github repo, etc.) describing its functionnalities, its licencing, etc. Required format is a URL.
+The tool must have a dedicated web page (landing page, github repo, etc.) describing its functionalities, its licencing, etc. Required format is a URL.
 
 ## Sub-module ([sub_module]) **✅**
 
@@ -140,7 +140,7 @@ If GWP is checked in the environmental indicator field, this field indicates whi
 
 Should be aligned with the Life Cycle Steps (no scope 3 can be indicated if Manufacturing is not included in the Life Cycle Steps).
 
-![The relationship between the Corporate, Scope 3, and Product Standards for a companymanufacturing product A (Extracted from GHG Protocol Product Standard)](/api/attachments.redirect?id=8464dcbc-6acc-44e9-8a32-d40b0b0ef4a2 " =368x174")
+![The relationship between the Corporate, Scope 3, and Product Standards for a company manufacturing product A (Extracted from GHG Protocol Product Standard)](/api/attachments.redirect?id=8464dcbc-6acc-44e9-8a32-d40b0b0ef4a2" =368x174")
 
 
 ## Focus ([focus])**✅**
@@ -216,8 +216,8 @@ To which audience is disclosed the following information: inside model, main dat
 Described where the recording stands in the listing process (single value):
 
 * Submitted (ex-Sandbox): any record created by someone outside Boavizta or a Boavizta member willing to mention a tool to investigate
-* Draft: all the required fields are complete and the other fields are filled in with the available information on the tool or the approriate flag (“Not Applicable”, “To Be Qualified”, etc.)
-* Boavizta reviewed: a Boavizta member who is not the creator of the recording has reviewed and validated the recording. A boavizta member who is a stakeholder of an organization cannot reviewed any of its tool.
+* Draft: all the required fields are complete and the other fields are filled in with the available information on the tool or the appropriate flag (“Not Applicable”, “To Be Qualified”, etc.)
+* Boavizta reviewed: a Boavizta member who is not the creator of the recording has reviewed and validated the recording. A Boavizta member who is a stakeholder of an organization cannot reviewed any of its tool.
 * Published: the recording is publicly exposed in the repository (database and API)
 * Not to be listed: tool which don’t meet the criteria to be listed in the repository
 
