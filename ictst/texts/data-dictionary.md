@@ -140,7 +140,8 @@ If GWP is checked in the environmental indicator field, this field indicates whi
 
 Should be aligned with the Life Cycle Steps (no scope 3 can be indicated if Manufacturing is not included in the Life Cycle Steps).
 
-![The relationship between the Corporate, Scope 3, and Product Standards for a company manufacturing product A (Extracted from GHG Protocol Product Standard)](/api/attachments.redirect?id=8464dcbc-6acc-44e9-8a32-d40b0b0ef4a2" =368x174")
+![The relationship between the Corporate, Scope 3, and Product Standards for a company manufacturing product A (Extracted from GHG Protocol Product Standard)](https://raw.githubusercontent.com/Boavizta/ict-sustainability-tools/refs/heads/main/ictst/texts/scopes.png)
+*The relationship between the Corporate, Scope 3, and Product Standards for a company manufacturing product A (Extracted from GHG Protocol Product Standard)*
 
 
 ## Focus ([focus])**✅**
