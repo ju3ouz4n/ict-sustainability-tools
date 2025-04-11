@@ -1,0 +1,13 @@
+---
+config:
+  theme: redux
+  layout: elk
+---
+flowchart TD
+    A("Contribution through website")
+    A --> |Pull Request Created| B("Public discussions on pull request")
+    B --> C{"Validation by Boavizta Commitee"}
+    C --> |OK| E("Merge & Close Pull Request")
+    E --> H("Contribution publicly Available")
+    C --> |KO| D("Write Decision Reason on Pull Request")
+    D --> G("Close Pull Request without merge")
