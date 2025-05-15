@@ -1,10 +1,9 @@
 name: Example PR Workflow
 on:
   pull_request:
-    paths:
-      - 'ictst/data/tools.csv'
     types: [opened, synchronize, reopened, closed]
-
+    paths:
+      - '**/tools.csv'
 jobs:
   build:
     runs-on: ubuntu-latest
