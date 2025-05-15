@@ -1,0 +1,16 @@
+name: Example PR Workflow
+on:
+  pull_request:
+    paths:
+      - 'ictst/data/tools.csv'
+    types: [opened, synchronize, reopened, closed]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run a one-line script
+        run: echo "The event type is ${{ github.event.action }}"
+      - name: Get branch name
+        run: echo "Branch name is ${{ github.head_ref }}"
