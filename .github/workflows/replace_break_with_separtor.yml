@@ -1,4 +1,4 @@
-name: Example PR Workflow
+name: Replace break with separator
 on:
   pull_request:
     types: [opened, synchronize, reopened, closed]
