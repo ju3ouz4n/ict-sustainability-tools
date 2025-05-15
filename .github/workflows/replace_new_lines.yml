@@ -1,0 +1,32 @@
+name: Example PR Workflow
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    paths:
+      - '**/tools.csv'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+      - name: Set up Python
+        # This is the version of the action for setting up Python, not the Python version.
+        uses: actions/setup-python@v5
+        with:
+          # Semantic version range syntax or exact version of a Python version
+          python-version: '3.x'
+          # Optional - x64 or x86 architecture, defaults to x64
+          architecture: 'x64'
+      # You can test your matrix by printing the current Python version
+      - name: Display Python version
+        run: |
+          python post_process_data.py
+          # Note: the following account information will not work on GHES
+          git config user.name "github-actions[bot]"
+          git add .
+          git commit -m "remove new line and replace with ||"
+          git push
