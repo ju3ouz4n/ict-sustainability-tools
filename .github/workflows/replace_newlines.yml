@@ -9,7 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run a one-line script
-        run: echo "The event type is ${{ github.event.action }}"
-      - name: Get branch name
-        run: echo "Branch name is ${{ github.head_ref }}"
+      - run: |
+          tr '\n' '//' < ./ictst/data/tools.csv
+          # Note: the following account information will not work on GHES
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "remove new line and replace with //"
+          git push
